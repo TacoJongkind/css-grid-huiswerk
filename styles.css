@@ -16,21 +16,21 @@
             "footer";
 
 }
-    /*alles wat hierin staat is voor GROTer dan mobiel , tablets en desktops. ALLEEN de properties die veranderen*/
-    @media screen and (min-width: 576px) {
-        .grid-container {
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 50px 240px 100px auto 50px;
-            grid-template-areas:
+/*alles wat hierin staat is voor GROTer dan mobiel , tablets en desktops. ALLEEN de properties die veranderen*/
+@media screen and (min-width: 576px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 50px 240px 100px auto 50px;
+        grid-template-areas:
         "header large-sidebar large-sidebar"
         "main large-sidebar large-sidebar"
         "main mid-bar small-side-bar"
         "main mid-bar ."
         "footer footer footer";
 
-        }
-
     }
+
+}
 
 .grid-item {
     padding: 8px;
@@ -69,46 +69,3 @@
 
 
 
-
-/*
-body {
-    background-color: antiquewhite;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 100px 80px 80px 60px;
-    gap: 16px;
-    grid-template-areas:
-    "header large-sidebar"
-    "article large-sidebar"
-    "article midbar small-sidebar"
-    "footer footer";
-
-}
-header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: indianred;
-    grid-area: header;
-}
-article{
-    background-color: indianred;
-    grid-area: article;
-    padding: 16px;
-}
-.large-sidebar{
-    background-color: indianred;
-    grid-area: large-sidebar;
-}
-.small-sidebar{
-    background-color: indianred;
-    grid-area: small-sidebar;
-}
-.mid-bar{
-    background-color: indianred;
-    grid-area: mid-bar;
-}
-footer{
-    background-color: indianred;
-    grid-area: footer;
-}*/
